@@ -1,0 +1,24 @@
+{
+  "name": "nurral",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server for the 42 weighted Bitcoin macro factors.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "smoke": "node dist/smoke.js",
+    "test": "tsc -p tsconfig.json && node --test dist/parse.test.js dist/catalog.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}

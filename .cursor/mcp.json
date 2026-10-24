@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nurral": {
+      "command": "node",
+      "args": ["dist/index.js"]
+    }
+  }
+}
